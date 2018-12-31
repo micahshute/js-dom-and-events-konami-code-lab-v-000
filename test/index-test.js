@@ -28,10 +28,8 @@ describe('index', () => {
       for (let i = 0, l = code.length; i < l; i++) {
         triggerKeyDown(code[i])
       }
-
       expect(window.alert).toHaveBeenCalled()
     })
-
     it('does not trigger an alert if the wrong code is entered', () => {
       init()
 
